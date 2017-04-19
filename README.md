@@ -8,11 +8,12 @@ Redis DB.
 ### Build
   - `docker build --tag myretail-restful-service-redis .`
 
-### Run (using gunicorn)
-  - `docker run --rm \
+### Run
+  - `docker run \
     --name myretail-restful-service-redis \
     -p 6379:6379 \
     myretail-restful-service-redis`
 
 ### Interact
-  - Use redis-py to interact with the DB in python
+  - Use redis-py to interact in python
+  - Use redis-cli locally with localhost:6379
