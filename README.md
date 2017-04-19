@@ -11,7 +11,7 @@ Redis DB.
 ### Run
   - `docker run \
     --name myretail-restful-service-redis \
-    -p 6379:6379 \
+    --net=host -p 6379:6379 \
     myretail-restful-service-redis`
 
 ### Interact
